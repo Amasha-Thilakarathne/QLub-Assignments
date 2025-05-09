@@ -1,0 +1,21 @@
+payment_page:
+  # Primary actions
+  pay_now_button: "//button[contains(@class,'pay_priceContainer')]"
+  order_table_section:     "//div[contains(@class,'non-shrinkable_orderTable')]"
+  total_pay_amount:        "//div[contains(@class,'split-anchor_splitAction')]//span[contains(@class,'mui-1akg239')]"
+  # Split bill
+  split_bill_button:       "//button[contains(@data-qa-id,'billing-split-bill')]"
+  custom_split_button:     "//button[@id='select-custom']"
+  custom_amount_input:     "//input[@name='amount']"
+  confirm_split_button:    "//button[@id='split-bill']"
+  # Card input frames
+  card_number_iframe:      "//iframe[@id='cardNumber']"
+  expiry_date_iframe:      "//iframe[@id='expiryDate']"
+  cvv_iframe:              "//iframe[@id='cvv']"
+  # Real card, expiry, and CVV inputs
+  card_number_input:       "//input[@id='checkout-frames-card-number']"
+  expiry_date_input:       "//input[@autocomplete='cc-exp']"
+  cvv_input:               "//input[@autocomplete='cc-csc']"
+  # Final payment
+  pay_button:              "//button[@id='pay-button-checkout-card']"
+  payment_success_message: "//*[contains(text(),'Payment was successful')]"
